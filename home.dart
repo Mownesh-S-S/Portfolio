@@ -253,6 +253,11 @@ class HomeScreenState extends State<Home> {
                             maxHeight: 240,
                             minHeight: 240,
                           ),
+                      ConstrainedBox(
+                          constraints: const BoxConstraints(
+                            maxHeight: 240,
+                            minHeight: 240,
+                          ),
                           child: AdWidget(ad: _ad!)),
                     if (clubNews.isNotEmpty)
                       ValueListenableBuilder<double>(
