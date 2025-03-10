@@ -136,6 +136,10 @@ class HomeScreenState extends State<Home> {
               matchPreviewList
                   .sort((a, b) => a.sortOrder.compareTo(b.sortOrder));
             }
+            if (matchPreviewList != null && matchPreviewList.length > 0) {
+              matchPreviewList
+                  .sort((a, b) => a.sortOrder.compareTo(b.sortOrder));
+            }
             var topNews = successState.topNews;
             var clubNews = successState.clubNews;
             var nationalNews = successState.nationalNews;
