@@ -158,13 +158,6 @@ class HomeScreenState extends State<Home> {
                   (item.homeTeam.id == favNationalTeamId ||
                       item.awayTeam.id == favNationalTeamId));
 
-              if (isFavouriteTeamPlaying) {
-                favoriteTeam = matchPreviewList.firstWhere((item) =>
-                    (item.homeTeam.id == favClubId ||
-                        item.awayTeam.id == favClubId) ||
-                    (item.homeTeam.id == favNationalTeamId ||
-                        item.awayTeam.id == favNationalTeamId));
-              }
             }
             return Scaffold(
                 appBar: AppBar(
